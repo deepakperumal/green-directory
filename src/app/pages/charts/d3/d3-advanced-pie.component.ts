@@ -14,7 +14,7 @@ export class D3AdvancedPieComponent implements OnDestroy {
   single = [
     {
       name: 'Germany',
-      value: 8940000,
+      value: 89400010,
     },
     {
       name: 'USA',
