@@ -13,7 +13,7 @@
     "ng": "ng",
     "dev":"ng serve & node server.js",
     "conventional-changelog": "conventional-changelog",
-    "start": "node server.js",
+    "start": "node ./server/src",
     "build": "ng build",
     "heroku-postbuild": "ng build --prod",
     "build:prod": "npm run build -- --prod --aot",
