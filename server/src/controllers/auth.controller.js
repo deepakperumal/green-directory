@@ -21,14 +21,15 @@ exports.register = async (req, res, next) => {
 }
 
 exports.login = async (req, res, next) => {
-  try {
-    const user = await User.findAndGenerateToken(req.body)
-    const payload = {sub: user.id}
-    const token = jwt.sign(payload, config.secret)
-    return res.json({ message: 'OK', token: token })
-  } catch (error) {
-    next(error)
-  }
+  // try {
+    // const user = await User.findAndGenerateToken(req.body)
+    // const payload = {sub: user.id}
+    // const token = jwt.sign(payload, config.secret)
+    return res.json({ message: 'OK', token: 'ewewewe' })
+  // } catch (error) {
+  //   return res.json({ message: 'OK', error: error })
+  //   //next(error)
+  // }
 }
  
 exports.confirm = async (req, res, next) => {

@@ -106,7 +106,7 @@ userSchema.statics = {
     if (err.code === 11000) {
       var error = new Error('Email already taken')
       error.errors = [{
-        field: 'email',
+        field: 'email', 
         location: 'body',
         messages: ['Email already taken']
       }]
