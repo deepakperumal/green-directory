@@ -11,7 +11,6 @@
   },
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve",
     "conventional-changelog": "conventional-changelog",
     "start": "node ./server/src",
     "build": "ng build",
