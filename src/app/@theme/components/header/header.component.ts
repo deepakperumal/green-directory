@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
       name: 'Light',
     },
     {
-      value: 'dark',
+      value: 'dark', 
       name: 'Dark',
     },
     {

@@ -19,7 +19,7 @@ import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FormsModule as ngFormsModule } from '@angular/forms';
-
+import {UserService } from '../../@core/http/user.service'
 @NgModule({
   imports: [
     ThemeModule,
@@ -43,5 +43,6 @@ import { FormsModule as ngFormsModule } from '@angular/forms';
     FormLayoutsComponent,
     DatepickerComponent,
   ],
+  providers: [UserService]
 })
 export class FormsModule { }

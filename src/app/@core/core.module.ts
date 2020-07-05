@@ -53,6 +53,9 @@ import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { SecurityCamerasService } from './mock/security-cameras.service';
 import { MockDataModule } from './mock/mock-data.module';
 
+
+/* Authentication Services */
+
 const socialLinks = [
   {
     url: 'https://github.com/akveo/nebular',
