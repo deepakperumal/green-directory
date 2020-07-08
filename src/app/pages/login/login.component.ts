@@ -12,7 +12,7 @@ export class LoginComponent {
   constructor(public userService :UserService,public router: Router){}
   email:String;
   password:String;
-  errorMessage:String;
+  errorMessage:String; 
   userLogin()
   {
     const user = {
