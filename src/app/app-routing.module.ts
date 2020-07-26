@@ -1,53 +1,24 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import {
-  NbAuthComponent,
-  NbLoginComponent,
-  NbLogoutComponent,
-  NbRegisterComponent,
-  NbRequestPasswordComponent,
-  NbResetPasswordComponent,
-} from '@nebular/auth';
 import { AuthGuardService } from './@core/guards/auth-guard-service'
-import {LoginComponent} from "./pages/login/login.component"
 export const routes: Routes = [
   {
-    path: 'pages',
+    path: 'admin',
     loadChildren: () => import('./pages/pages.module')
       .then(m => m.PagesModule),
       canActivate: [AuthGuardService]
   },
   {
     path: 'auth',
-    component: NbAuthComponent,
-    children: [
-      {
-        path: '',
-        component: LoginComponent,
-      },
-      {
-        path: 'login',
-        component: LoginComponent,
-      },
-      {
-        path: 'register',
-        component: NbRegisterComponent,
-      },
-      {
-        path: 'logout',
-        component: NbLogoutComponent,
-      },
-      {
-        path: 'request-password',
-        component: NbRequestPasswordComponent,
-      },
-      {
-        path: 'reset-password',
-        component: NbResetPasswordComponent,
-      },
-    ],
+    loadChildren: () => import('./pages/auth/auth.module')
+    .then(m => m.AuthModule)
   },
-  { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  {
+    path: '',
+    loadChildren: () => import('./pages/public/public.module')
+    .then(m => m.PublicModule)
+  },
+  // { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ];
 

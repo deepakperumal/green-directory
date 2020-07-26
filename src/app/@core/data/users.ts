@@ -8,7 +8,7 @@ export interface User {
 export interface Contacts {
   user: User;
   type: string;
-}
+} 
 
 export interface RecentUsers extends Contacts {
   time: number;

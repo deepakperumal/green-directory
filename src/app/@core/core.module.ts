@@ -122,7 +122,7 @@ export const NB_CORE_PROVIDERS = [
         socialLinks: socialLinks,
       },
     },
-  }).providers,
+  }).providers,  
 
   NbSecurityModule.forRoot({
     accessControl: {
