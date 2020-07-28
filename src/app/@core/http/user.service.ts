@@ -4,6 +4,7 @@ import {
 import {
   HttpClient
 } from '@angular/common/http';
+import { restUrl } from '../config/rest-api'
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +20,7 @@ export class UserService {
           'content-type': 'application/json'
       }
       const body = JSON.stringify(data);
-      return this.http.post('http://localhost:3000/api/auth/login', body, {
+      return this.http.post(restUrl.login, body, {
           'headers': headers
       })
   }
