@@ -9,4 +9,4 @@ export const restUrl= {
 
    login:''+env+'api/auth/login'
 
-}
+} 

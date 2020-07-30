@@ -19,7 +19,7 @@ export const routes: Routes = [
     .then(m => m.PublicModule)
   },
   // { path: '', redirectTo: 'pages', pathMatch: 'full' },
-  { path: '**', redirectTo: 'pages' },
+  { path: '**', redirectTo: '' },
 ];
 
 const config: ExtraOptions = {

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   </div>
 `,
-  styleUrls: ['auth.component.scss'],
+  styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent {
 

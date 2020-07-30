@@ -5,6 +5,8 @@ import { RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 import { HomeComponent } from './home/home.component'
 import { AboutComponent } from './about/about.component'
+import { HeaderComponent } from './common/header.component'
+import { FooterComponent } from './common/footer.component'
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { AboutComponent } from './about/about.component'
   declarations: [
     PublicComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent,
+    FooterComponent
   ],
 })
 export class PublicModule {

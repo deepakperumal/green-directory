@@ -8,7 +8,7 @@ const uuidv1 = require('uuid/v1')
 
 exports.register = async (req, res, next) => {
   try {
-    const activationKey = uuidv1()
+    const activationKey = uuidv1() 
     const body = req.body
     body.activationKey = activationKey
     const user = new User(body)
@@ -23,7 +23,7 @@ exports.register = async (req, res, next) => {
 exports.login = async (req, res, next) => {
   try {
     const user = await User.findAndGenerateToken(req.body)
-    const payload = {sub: user.id}
+    const payload = {sub: req.body.email}
     const token = jwt.sign(payload, config.secret)
     return res.json({ message: 'OK', token: token })
   } catch (error) {
