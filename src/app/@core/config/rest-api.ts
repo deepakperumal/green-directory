@@ -3,7 +3,7 @@ import { url } from "inspector";
 import { baseUrl } from './config'
 
 
-let env = baseUrl.prod
+let env = baseUrl.dev
 
 export const restUrl= {
 
