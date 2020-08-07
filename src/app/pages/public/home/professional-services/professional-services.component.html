@@ -1,0 +1,14 @@
+<div class="services-container">
+    <div class="sub-header h3 padding-v-1 text-center font-light">Once you’ve settled on a business</div>
+    <div class="header h1 padding-v-1 text-center">Popular Professional Services</div>
+    <div class="service-items padding-v-1  display-center">
+        <div class="wrapper padding-h-1" *ngFor="let item of serviceList">
+            <div class="service-img">
+                <div class="caption padding-v-1 padding-h-1">
+                    <div class="title font-white h3">{{item.title}}</div>
+                    <div class="info font-white h4">{{item.desc}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

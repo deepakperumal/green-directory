@@ -1,0 +1,13 @@
+<div class="ngx-carousel">
+  <ngb-carousel [interval]="false" #carousel>
+    <ng-template ngbSlide *ngFor="let img of images;let i=index">
+      <div class="carousel-img-wrapper">
+        <img class="carousel-img" [src]="img" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{labels[i]}}</h3>
+        <p>{{captions[i]}}</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+</div>
