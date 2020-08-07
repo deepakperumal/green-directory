@@ -1,4 +1,5 @@
-<ngb-carousel [interval]="false" #carousel>
+<div class="ngx-carousel">
+  <ngb-carousel [interval]="false" #carousel>
     <ng-template ngbSlide *ngFor="let img of images;let i=index">
       <div class="carousel-img-wrapper">
         <img class="carousel-img" [src]="img" alt="Random first slide">
@@ -9,3 +10,4 @@
       </div>
     </ng-template>
 </ngb-carousel>
+</div>
