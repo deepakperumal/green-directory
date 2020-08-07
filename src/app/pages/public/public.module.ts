@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component'
 import { AboutComponent } from './about/about.component'
 import { HeaderComponent } from './common/header.component'
 import { FooterComponent } from './common/footer.component'
+import { CategoryComponent } from './home/category/category.component'
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './common/footer.component'
     HomeComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CategoryComponent
   ],
 })
 export class PublicModule {
