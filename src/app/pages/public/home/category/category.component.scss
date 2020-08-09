@@ -1,0 +1,15 @@
+.category-section
+{
+    background-color: #3c774b;
+    color: #ffffff;
+    .category-img {
+        width: 35%;
+        background: #479465;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    .category-img:hover{
+        transform: translateY(-10px);
+        background: #ffffff;
+    }
+}  

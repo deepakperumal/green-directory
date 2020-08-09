@@ -1,13 +1,36 @@
-.services-container {
-    .service-items {
-        .wrapper {
-            .service-img {
-                width: 300px;
-                height: 340px;
-                background-color: rgb(121, 121, 121);
-                border-radius: 1rem;
-            } 
+.professional-service {
+    background-color: #f5f5f5;
+    .popular-service-container
+    {
+        position: relative;
+        transition: transform 0.5s ease;
+        .popular-cont {
+            width: 100%;
+        }
+        .cont-desc
+        {
+            background-color: #ffffff;
+        }
+        .highlight {
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            text-align: center;
+            background: #3c774b;
+            color: #fff;
+        }
+        .learn-more {
+            margin-top: 38px;
+            background: #3c774b;
+            border: none;
+            padding: 5px;
+            color: #fff;
+            font-weight: 700;
+            width: 128px;
         }
     }
-    
+    .popular-service-container:hover{
+        transform: translateY(-10px);
+    }
+
 }

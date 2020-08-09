@@ -6,11 +6,12 @@ import { FormsModule } from '@angular/forms'
 import { HomeComponent } from './home/home.component'
 import { AboutComponent } from './about/about.component'
 import { HeaderComponent } from './common/header.component'
+import { CategoryComponent } from './home/category/category.component'
 import { FooterComponent } from './common/footer.component';
 import { CarouselComponent } from './home/carousel/carousel.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {CommonModule} from '@angular/common'
-import {MatIconModule} from '@angular/material/icon';
+import { CommonModule } from '@angular/common'
+import { MatIconModule } from '@angular/material/icon';
 import { HotCountsComponent } from './home/hot-counts/hot-counts.component';
 import { FeaturesComponent } from './home/features/features.component';
 import { ProfessionalServicesComponent } from './home/professional-services/professional-services.component';
@@ -33,13 +34,14 @@ import { BusinessStepsComponent } from './home/business-steps/business-steps.com
     AboutComponent,
     HeaderComponent,
     FooterComponent,
+    CategoryComponent,
     CarouselComponent,
     HotCountsComponent,
     FeaturesComponent,
     ProfessionalServicesComponent,
     GetStartedComponent,
     InspirationComponent,
-    BusinessStepsComponent,
+    BusinessStepsComponent
   ],
 })
 export class PublicModule {

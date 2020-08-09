@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery' 
 @Component({
   selector: 'ngx-professional-services',
   templateUrl: './professional-services.component.html',
@@ -7,27 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalServicesComponent implements OnInit {
 
-  serviceList = [
-  {
-    title: 'Green Tips',
-    desc: 'Lorem id eum diam volutpat'
-  },
-  {
-    title: 'Green Blogs',
-    desc: 'Lorem id eum diam volutpat'
-  },
-  {
-    title: 'Green Events',
-    desc: 'Lorem id eum diam volutpat'
-  },
-  {
-    title: 'Green Agriculture',
-    desc: 'Lorem id eum diam volutpat'
-  }
-]
+
   constructor() { }
 
   ngOnInit(): void {
+
+    $(document).ready(function(){ 
+      //alert('GeeksForGeeks'); 
+    }); 
+
   }
 
 }
