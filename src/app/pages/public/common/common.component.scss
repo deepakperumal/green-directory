@@ -4,7 +4,7 @@
     header
     {
         .navbar-header {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color:#ffff;
             position: absolute;
             top: 0;
             left: 0;
@@ -15,12 +15,12 @@
         
         .navbar-light .navbar-brand {
             font-weight: bolder;
-            color: #fff;
+            color: #000000;
         }
         .navbar-light .navbar-nav .nav-link {
             font-family: "Courier New", Courier, monospace;
             font-weight: 800;
-            color: #fff;
+            color: #000000;
         }
         .btn-outline-success:hover {
             background-color: #05386B;
