@@ -4,6 +4,7 @@ import { AuthRoutingModule } from './auth-routing.module'
 import { RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 import { LoginComponent } from './login/login.component'
+import { RegisterComponent } from './register/register.component';
 import { NotifierModule, NotifierOptions } from 'angular-notifier';
 
 const customNotifierOptions: NotifierOptions = {
@@ -57,7 +58,8 @@ const customNotifierOptions: NotifierOptions = {
   ],
   declarations: [
     AuthComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
 })
 export class AuthModule {
