@@ -1,13 +1,9 @@
 <div class="hot-counts-container p-5">
-
-<div class="row hot-counts-content text-center">
-
-    <div class="col-md-3 col-6" *ngFor="let item of countItems">
-        <div class="count-icon sub-count-item font-light"><mat-icon>{{item.icon}}</mat-icon></div>
-        <div class="counts sub-count-item">{{item.count}}</div>
-        <div class="count-label sub-count-item font-light">{{item.label}}</div>
+    <div class="row hot-counts-content text-center">
+        <div class="col-md-3 col-6" *ngFor="let item of countItems">
+            <div class="count-icon sub-count-item font-light"><mat-icon>{{item.icon}}</mat-icon></div>
+            <div class="counts sub-count-item"><h5 class="mb-1 font-bold">{{item.count}}</h5></div>
+            <div class="count-label sub-count-item font-light"><h6 class="text-secondary">{{item.label}}</h6></div>
+        </div>
     </div>
-
-</div>
-
 </div>

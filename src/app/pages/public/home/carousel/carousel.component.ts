@@ -10,16 +10,6 @@ export class CarouselComponent implements OnInit, AfterViewInit{
   @ViewChild('carousel', {static: true}) carousel : any;
 
   images = [1, 2, 3].map((n) => `../assets/images/c_image${n}.jpg`);
-  labels = [
-    'First slide label',
-    'Second slide label',
-    'Third slide label'
-  ];
-  captions = [
-    'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    'Nulla vitae elit libero, a pharetra augue mollis interdum.'
-  ]
   animationInterval = 10000; //in milliseconds
   constructor() {
   }
